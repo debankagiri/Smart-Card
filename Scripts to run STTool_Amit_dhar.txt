@@ -1,0 +1,18 @@
+How to run scripts in STTool?
+
+1. Install pcscd and libpcsclite-dev in linux.
+2. cd to frontend folder from terminal. Run makefile using cmd: make. This will generate testtool executable.
+3. cd to the CommandLibrary folder from terminal and run makefile using cmd: make
+If You are getting ctags error then install ctags library using cmd: sudo apt install universal-ctags
+and run again make.
+4. remove all libcmdlib.so file from CommandLibrary folder using cmd: rm libcmdlib.so*
+5. run make again in this CommandLibrary folder. This will generate the file  libcmdlib.so.1.0
+6. cd to the backend folder and remove  loadlibrary.so.1 using cmd: rm loadlibrary.so.1
+7. run makefile again using cmd: make
+8. cd to the scripts folder and run cmd: ../frontend/testtool -s ./Common_Scripts/capacity
+This will generate out.cpp and header.h file in the scripts folder.  Copy these 2 files to the work folder.
+9. run the make_final_linux using the cmd: ./make_final_linux
+If it says permission denied, then run the cmd: chmod +x  make_final_linux
+Inside this  make_final_linux file . You have to change the path and the .so file name accordingly if required.
+10. run this cmd for path: export LD_LIBRARY_PATH="/home/debanka/Desktop/Working_Tool_For_Latest_Linux/tool_working/tool/CommandLibrary/:/home/debanka/Desktop/Working_Tool_For_Latest_Linux/tool_working/tool/STTool/lib/"
+11. Run the executable file using cmd: ./Testtool
