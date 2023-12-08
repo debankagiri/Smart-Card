@@ -5,3 +5,4 @@
 5. https://www.cse.iitk.ac.in/users/moona/smartcard/index.php?page=smartid/smartos
 6. https://www.cse.iitk.ac.in/users/moona/smartcard/index.php?page=smartid/applications
 7. https://www.cse.iitk.ac.in/users/moona/smartcard/
+8 https://www.analog.com/en/app-notes/secure-microcontrollers-nfc-overview.html
